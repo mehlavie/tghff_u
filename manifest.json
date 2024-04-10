@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "金馬影展場地更新",
+  "description": "自動將2024年金馬奇幻影展訂單查詢頁面的場地資訊更新為地震後影廳座位異動的資訊(不支援特映會場次)。",
+  "version": "1.0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://tghff.tixcraft.com/order"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "tghff.png"
+  }
+}
